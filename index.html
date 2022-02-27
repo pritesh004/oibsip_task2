@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            task2
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@200&family=Josefin+Sans:wght@355;400&display=swap" rel="stylesheet">
+
+    </head>
+    <style>
+        body{
+            font-family: 'IBM Plex Serif', serif, 'Josefin Sans', sans-serif;
+            color: black;
+        }
+        #bg{
+            height: 580px;
+            background:url("images/bg.jpg") no-repeat fixed center;
+            
+        }
+        #nav{
+            background-color:rgba(255, 255, 255, 0);
+            border: none;
+            margin-left: 40%;
+            font-size: 0.5cm;
+            position: fixed;
+        }
+        #myimg{
+            width: 300px;
+            height: 300px;
+            margin-left: 40%;
+            border-radius: 50%;
+            margin-top: 60px;
+        }
+        
+        .fa {
+            font-size: 40px;
+            padding: 7px;
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            background-color: black;
+        }
+        .fa:hover{
+            text-decoration: none;
+        }
+        #about{
+            width:1000px;
+            height: 400px;
+            background-color: white ;
+            margin-left: 17%;
+            margin-top: 50px;
+            font-size: larger;
+            padding: 5px;
+            box-shadow: 1px 1px 30px black;            
+        }
+        .progress-bar-container:not(:last-child) {
+            margin-bottom: 50px;
+        }
+        .progress-bar-container h2 {
+            font-family: 'IBM Plex Serif', serif, 'Josefin Sans', sans-serif;
+            color:black;
+            letter-spacing: 1px;
+            margin-left: 10%;
+            font-size: 15px;
+        }
+        .progress-bar {
+            width: 800px;
+            height: 6px;
+            margin-top: 10px;
+            margin-left: 10%;
+            border: 1px solid black;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgb(14, 14, 14);
+        }
+        .percentage {
+            display: block;
+            height: 100%;
+            background-color: rgb(11, 52, 112);
+            border-radius: 5px;
+            animation: progress 1500ms ease-in 1;
+        }
+        .c {
+            width: 90%;
+        }
+ 
+        .java {
+            width: 80%;
+        }
+ 
+        .python {
+            width: 70%;
+        }
+ 
+        .html {
+            width: 75%;
+        }
+ 
+        .css {
+            width: 60%;
+        }
+ 
+        .javascript {
+            width: 80%;
+        }
+        @keyframes progress {
+            from {
+                width: 0;
+            }
+        }
+        #skill{
+            width:1000px;
+            height: 680px;
+            background-color: white ;
+            margin-left: 17%;
+            margin-top: 50px;
+            font-size: larger;
+            padding: 10px;
+            box-shadow: 5px 5px 20px black;  
+            color: black;
+
+        }
+        .row{
+            margin-left: 17%;
+            width: 1000px;
+            height: 200px;
+            box-shadow: 5px 5px 20px rgb(70, 70, 70);
+        }
+        .col-md-3{
+            padding: 38px;
+            height: 200px;
+            width:300px;
+         
+        }
+        .col-sm-8{
+            width: 700px;
+            height: 200px;
+          padding: 12px;
+
+        }
+        #contact{
+        background-color: rgb(79, 231, 206);
+        padding: 10px;
+        height: 300px;
+        margin-left: 17%;
+        box-shadow: 5px 5px 20px rgb(70, 70, 70);
+        width: 1000px;
+        }
+        form{
+    width: 350px;
+    padding: 30px;
+    margin-top: 3%;
+    margin-left: 33%;
+  }
+  label{
+    width: 80px;
+    padding: 10px;
+  }
+  button{
+    margin-left: 77px;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+    </style>
+    <header>
+        <nav id="nav">
+          <div style="background-color:transparent"> 
+            <ul class="nav navbar-nav">
+              <li><a href="index.html" style="color: white;">Home</a></li>
+              <li><a href="#about" style="color: white;">About</a></li>
+              <li><a href="#contact" style="color: white;">Contact Me</a></li>
+            </ul>
+          </div>
+        </nav>      
+    </header>
+    <body>
+    <div id="bg">
+        <div>
+            <img id="myimg" src="images/myimg1.jpeg" alt="myimg"><br>
+            <center><strong> <h2 style="color: white;"> PRITESH NAIK </h2></strong></center>
+            <center><strong> <h3 style="color: white;">Web Developer, Software Engineer</h3></strong></center>
+            <center><a href="images/Resume.pdf" class="btn btn-default" style="margin-top:20px" >Download Resume</a></center>
+            <br>
+            <center>
+                <a  href="https://www.instagram.com/priteshnaik11/" class="fa fa-instagram"></a>
+                <a  href="https://www.facebook.com/priteshnaik11/" class="fa fa-facebook-official"></a>
+                <a  href="https://www.linkedin.com/in/pritesh-naik-4835041a4/" class="fa fa-linkedin"></a>
+              </center>
+        </div>
+    </div>
+    <div id="about">
+        <center><h3> <b>ABOUT ME</b> </h3></center>
+    <hr id="headerline">
+    <br>
+    <div id="box"> 
+        <center>   
+      <b>Name :</b>  Pritesh Nandkumar Naik <br> <br>
+      <b>Email :</b> priteshnaik004@gmail.com <br> <br>
+      <b>Mobile No :</b> 9834850056 <br> <br>
+      <b>Address :</b> 537,Rasta Peth, Near Granny Amma's Bakery,Pune-411011 <br> <br>
+      <b>DOB :</b> 06/02/2002 <br> <br>
+      <b>Nationality :</b> Indian <br> <br>         
+    </center>   
+    </div>
+
+    </div>
+
+
+    <div >
+    <div id="skill">
+        <center><h3> <b>SKILLS</b> </h3></center>
+        <hr id="headerline">
+        <div class="progress-bar-container">
+            <h2><strong>C/C++</strong> <label style="margin-left: 80%;">90%</label></h2>
+            <div class="progress-bar">
+                <span class="percentage c"></span>
+            </div>
+        </div>
+ 
+        <div class="progress-bar-container">
+            <h2><strong>Java</strong><label style="margin-left: 82%;">80%</label> </h2>
+            <div class="progress-bar">
+                <span class="percentage java"></span>
+            </div>
+        </div>
+ 
+        <div class="progress-bar-container">
+            <h2><strong>Python</strong><label style="margin-left: 80%;">70%</label></h2>
+            <div class="progress-bar">
+                <span class="percentage python"></span>
+            </div>
+        </div>
+ 
+        <div class="progress-bar-container">
+            <h2><strong> HTML</strong><label style="margin-left: 81%;">75%</label></h2>
+            <div class="progress-bar">
+                <span class="percentage html"></span>
+            </div>
+        </div>
+ 
+        <div class="progress-bar-container">
+            <h2><strong> CSS</strong><label style="margin-left: 83%;">60%</label></h2>
+            <div class="progress-bar">
+                <span class="percentage css"></span>
+            </div>
+        </div>
+ 
+        <div class="progress-bar-container">
+            <h2><strong> JavaScript</strong><label style="margin-left: 78%;">80%</label></h2>
+            <div class="progress-bar">
+                <span class="percentage javascript"></span>
+            </div>
+        </div>
+    </div>
+    </div>
+<BR><BR><BR><BR><center><h3> <b>EDUCATION</b> </h3></center><BR><BR><BR>
+    <div class="row">
+        <div class="col-md-3" style="background-color:rgb(9, 191, 223);">
+            <center><h3><b>Bachelor's Degree</b></h3></center>
+            <center><h3><b>2020-2023</b></h3></center>
+            
+        </div>
+        <div class="col-sm-8" style="background-color:white;color: black;"><h3><strong> Bachelor's Of Computer Engineering</strong></h3>
+         <h4><strong>University:-</strong>Savitribai Phule Pune University(SPPU)</h4>
+         <h4><strong>College Name:-</strong>Navsahyadri Education Society and Group Of Institutions</h4>
+         <h4><strong>Percentage:-</strong>NA</h4>
+        </div>
+      </div>
+    </div>
+    <br><br><br>
+    <div class="row">
+        <div class="col-md-3" style="background-color:rgb(9, 191, 223);">
+            <center><h3><b>Diploma (Computer)</b></h3></center>
+            <center><h3><b>2017-2020</b></h3></center>
+            
+        </div>
+        <div class="col-sm-8" style="background-color:white;color: black;"><h3><strong> Diploma In Computer Engineering</strong></h3>
+         <h4><strong>University:-</strong>An Autonomous Institute Of Government Of Maharashtra</h4>
+         <h4><strong>College Name:-</strong>Government Polytechnic,Pune(GPP)</h4>
+         <h4><strong>Percentage:-</strong>72.60</h4>
+        </div>
+      </div>
+    </div>
+    <br><br><br>
+    <div class="row">
+        <div class="col-md-3" style="background-color:rgb(9, 191, 223);">
+            <center><h3><b>High School</b></h3></center>
+            <center><h3><b>2011-2017</b></h3></center>
+            
+        </div>
+        <div class="col-sm-8" style="background-color:white;color: black;"><h3><strong> Secondary School Certification</strong></h3>
+         <h4><strong>University:-</strong>Maharashtra State Board</h4>
+         <h4><strong>School Name:-</strong>N.M.V High School</h4>
+         <h4><strong>Percentage:-</strong>85.20</h4>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br>
+    <center><h3><strong>CONTACT ME</strong></h3></center><br><br><br>
+    <div id="contact">
+        <form>
+          <div>
+            <label>Name</label>
+            <input type="text" name="Name" required>
+          </div>
+          <div>
+            <label>Email</label>
+            <input type="text" name="Email" required>
+          </div>
+          <div>
+            <label>Message</label>
+            <input type="text" name="Message" required>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    
+    </div>
+    <br><br><br>
+    
+        
+    </body>
+</html>
